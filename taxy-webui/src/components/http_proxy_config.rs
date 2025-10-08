@@ -139,10 +139,10 @@ pub fn http_proxy_config(props: &Props) -> Html {
                 html!{
                     <div class="mt-2 bg-white dark:text-neutral-200 dark:bg-neutral-800 shadow-sm p-5 border border-neutral-300 dark:border-neutral-700 rounded-md">
                         <label class="block mb-2 text-sm font-medium text-neutral-900 dark:text-neutral-200">{"Key"}</label>
-                        <input type="text" autocapitalize="off" value={k.to_string()} onchange={k_onchange} class="bg-neutral-50 dark:text-neutral-200 dark:bg-neutral-800 dark:border-neutral-600 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Access-Control-Allow-Origin" />
+                        <input type="text" autocapitalize="off" value={k.to_string()} onchange={k_onchange} class="bg-neutral-50 dark:text-neutral-200 dark:bg-neutral-800 dark:border-neutral-600 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Server" />
 
                         <label class="block mb-2 text-sm font-medium text-neutral-900 dark:text-neutral-200">{"Value"}</label>
-                        <input type="text" autocapitalize="off" value={v.to_string()} onchange={v_onchange} class="bg-neutral-50 dark:text-neutral-200 dark:bg-neutral-800 dark:border-neutral-600 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="*" />
+                        <input type="text" autocapitalize="off" value={v.to_string()} onchange={v_onchange} class="bg-neutral-50 dark:text-neutral-200 dark:bg-neutral-800 dark:border-neutral-600 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="taxy" />
 
                         <div class="flex justify-end rounded-md mt-4 sm:ml-auto px-4 lg:px-0" role="group">
                             <button type="button" onclick={add_onclick} class="inline-flex items-center px-4 py-2 text-sm font-medium text-neutral-500 dark:text-neutral-200 bg-white dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-l-lg hover:bg-neutral-100 hover:dark:bg-neutral-900 focus:z-10 focus:ring-4 focus:ring-neutral-200 dark:focus:ring-neutral-600">
